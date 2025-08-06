@@ -12,6 +12,7 @@ var todos []models.Todo
 var nextID = 1
 
 func GetTodos(c *gin.Context) {
+    todos := []models.Todo{}
     c.JSON(http.StatusOK, todos)
 }
 
